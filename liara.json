@@ -1,0 +1,9 @@
+{
+    "disks": [
+        {
+            "name": "images",
+            "mountTo": "images",
+            "type": "data"
+        }
+    ]
+}

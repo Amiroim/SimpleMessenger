@@ -1,0 +1,97 @@
+@font-face {
+	font-family: "Yekan Bakh";
+	src: url(./BYekan/BYekan.ttf);
+}
+
+* {
+	color: #fff;
+	font-family: "Yekan Bakh", "Jost", sans-seri;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+	width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 25px;
+	border: 1px solid #aaa;
+}
+
+.AppMain {
+	height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+	background-color: #171717;
+	color: #fff;
+}
+
+.box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 80dvw;
+	max-width: 500px;
+	padding: 20px;
+	justify-content: space-between;
+	animation: borderColerd 8s linear infinite;
+	background-color: #ffffff21;
+	border: 3px solid transparent;
+	border-radius: 15px;
+	margin: 10px auto;
+	width: -webkit-fill-available;
+}
+
+a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+@keyframes borderColerd {
+	0% {
+		border-color: #ff0000;
+		box-shadow: 0 0 20px #ff0000;
+	}
+	25% {
+		border-color: #ffcc00;
+		box-shadow: 0 0 20px #ffcc00;
+	}
+	50% {
+		border-color: #00cc00;
+		box-shadow: 0 0 20px #00cc00;
+	}
+	75% {
+		border-color: #0066ff;
+		box-shadow: 0 0 20px #0066ff;
+	}
+	100% {
+		border-color: #ff0000;
+		box-shadow: 0 0 20px #ff0000;
+	}
+}
+@keyframes greenPulse {
+	0% {
+		box-shadow: rgba(102, 255, 153, 0.35) 0px 0px 0px 0px;
+	}
+	50% {
+		box-shadow: rgba(102, 255, 153, 0.35) 0px 0px 0px 7.5px;
+	}
+	100% {
+		box-shadow: rgba(102, 255, 153, 0.35) 0px 0px 0px 0px;
+	}
+}
+@keyframes redPulse {
+	0% {
+		box-shadow: rgba(255, 102, 102, 0.35) 0px 0px 0px 0px;
+	}
+	50% {
+		box-shadow: rgba(255, 102, 102, 0.35) 0px 0px 0px 7.5px;
+	}
+	100% {
+		box-shadow: rgba(255, 102, 102, 0.35) 0px 0px 0px 0px;
+	}
+}
